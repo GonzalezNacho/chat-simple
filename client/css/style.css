@@ -16,6 +16,20 @@ body {
     color-scheme: ligth dark;
 }
 
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages>li {
+    padding: .5rem 1rem;
+}
+
+#messages>li:nth-child(odd) {
+    background: #000;
+}
+
 #chat {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -41,4 +55,20 @@ body {
     flex: 1;
     margin: 4px;
     padding: 0 8px;
+}
+
+#input:focus {
+    outline: 0;
+}
+
+#form > button {
+    background: #09f;
+    color : #fff;
+    border: 0;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+#form >button:hover {
+    background: #0cf;
 }
